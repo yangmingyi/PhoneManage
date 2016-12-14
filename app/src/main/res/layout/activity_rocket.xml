@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rocket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhuoxin.activity.RocketActivity">
+    <com.zhuoxin.view.ActionBarView
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.zhuoxin.view.ActionBarView>
+    <TextView
+        android:id="@+id/tv_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XIAOMI"
+        android:textSize="@dimen/item_textsize"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="android.6.0.1"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+    <ProgressBar
+        android:id="@+id/pb_rocket"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        style="?android:progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progress_softmanager"
+        android:max="100"
+        android:progress="30"/>
+    <TextView
+        android:id="@+id/tv_rocket_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="剩余"
+        android:gravity="end"
+        android:textSize="10sp"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ProgressBar
+            android:id="@+id/pb_rocket_loading"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"/>
+        <ListView
+            android:id="@+id/lv_rocket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </RelativeLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btn_rocket"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/selector_button"
+            android:text="一键加速"
+            android:textSize="20sp"
+            android:textColor="#fff">
+        </Button>
+
+
+</LinearLayout>

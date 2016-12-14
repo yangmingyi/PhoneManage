@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhuoxin.activity.HomeActivity">
+
+    <com.zhuoxin.view.ActionBarView
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.zhuoxin.view.ActionBarView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+
+        <com.zhuoxin.view.CleanCircleView
+            android:id="@+id/ccv_home"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="147dp"
+            android:layout_height="147dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/home_score_normal_bg" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="20%"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+
+    <include layout="@layout/layout_home"></include>
+</RelativeLayout>
